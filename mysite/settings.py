@@ -129,3 +129,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 import os
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+import os
+
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+
+# Tell Django where to collect static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# If you want to keep your local development working, include this:
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
