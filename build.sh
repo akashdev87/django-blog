@@ -15,3 +15,7 @@ python manage.py migrate
 
 # Optional: collect static files for production
 python manage.py collectstatic --noinput
+
+# Create superuser (ONLY if it doesn't exist)
+echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(username='admin').exists() or User.objects.create_superuser('admin', 'admin@example.com', 'adminpass')" | python manage.py shell
+    
