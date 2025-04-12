@@ -1,0 +1,27 @@
+# Python    
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.env
+venv/
+env/
+
+# Node
+node_modules/
+
+# Tailwind output
+static/css/style.css
+
+# Django static files
+staticfiles/
+
+# VS Code settings
+.vscode/
+
+# macOS & Windows
+.DS_Store
+Thumbs.db
+tailwindcss.exe
